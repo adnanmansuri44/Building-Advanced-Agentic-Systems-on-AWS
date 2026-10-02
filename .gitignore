@@ -1,0 +1,29 @@
+# Python
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+**/.venv/
+**/venv/
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Environment files (never commit secrets/config; .env.example is tracked)
+**/.env
+**/.env.local
+*.env.local
+
+# Node / CDK (nested .gitignore files under agentcore/ also cover these)
+**/node_modules/
+**/dist/
+**/cdk.out/
+**/.cdk.staging/
+
+# AgentCore CLI internals (ephemeral cache, verbose logs)
+**/agentcore/.cache/*
+**/agentcore/.cli/*
+!**/agentcore/.cli/deployed-state.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

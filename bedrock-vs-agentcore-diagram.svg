@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1230" width="1600" height="1230">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#545B64"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="1230" fill="#FFFFFF"/>
+
+  <g font-family="'Segoe UI', Arial, sans-serif">
+
+    <!-- ================= HEADER ================= -->
+    <rect x="0" y="0" width="1600" height="96" fill="#232F3E"/>
+    <rect x="0" y="96" width="1600" height="4" fill="#FF9900"/>
+    <text x="800" y="38" text-anchor="middle" font-size="26" font-weight="bold" fill="#FFFFFF">Bedrock Agents vs Bedrock AgentCore</text>
+    <text x="800" y="58" text-anchor="middle" font-size="13" fill="#D5DBDB">Architecture Comparison for AWS Community Day</text>
+
+    <!-- Legend -->
+    <rect x="330" y="74" width="14" height="14" fill="#232F3E" stroke="#FFFFFF" stroke-width="1"/>
+    <text x="350" y="85.5" font-size="11.5" fill="#FFFFFF">Core Service</text>
+
+    <rect x="520" y="74" width="14" height="14" fill="#FF9900"/>
+    <text x="540" y="85.5" font-size="11.5" fill="#FFFFFF">Framework / Agent Logic</text>
+
+    <rect x="780" y="74" width="14" height="14" fill="#0972D3"/>
+    <text x="800" y="85.5" font-size="11.5" fill="#FFFFFF">Component / Module</text>
+
+    <rect x="1030" y="74" width="14" height="14" fill="#879596"/>
+    <text x="1050" y="85.5" font-size="11.5" fill="#FFFFFF">Downstream Integration</text>
+
+    <!-- Divider -->
+    <line x1="800" y1="116" x2="800" y2="1200" stroke="#D5DBDB" stroke-width="2" stroke-dasharray="8,6"/>
+
+    <!-- ================= LEFT: BEDROCK AGENTS ================= -->
+    <text x="400" y="136" text-anchor="middle" font-size="19" font-weight="bold" fill="#232F3E">Amazon Bedrock Agents (Native)</text>
+
+    <rect x="330" y="156" width="140" height="46" rx="8" fill="#232F3E"/>
+    <text x="400" y="185" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">User</text>
+
+    <line x1="400" y1="202" x2="400" y2="241" stroke="#545B64" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- Bedrock outer box -->
+    <rect x="110" y="246" width="580" height="350" rx="12" fill="#F2F3F3" stroke="#232F3E" stroke-width="2"/>
+    <text x="135" y="276" font-size="17" font-weight="bold" fill="#232F3E">Amazon Bedrock</text>
+
+    <rect x="150" y="291" width="500" height="175" rx="8" fill="#FFF3E0" stroke="#FF9900" stroke-width="2.5"/>
+    <text x="400" y="316" text-anchor="middle" font-size="16" font-weight="bold" fill="#232F3E">Bedrock Agent</text>
+    <text x="185" y="342" font-size="14" fill="#232F3E">• Reasoning</text>
+    <text x="185" y="366" font-size="14" fill="#232F3E">• Planning</text>
+    <text x="185" y="390" font-size="14" fill="#232F3E">• Tool Selection</text>
+    <text x="185" y="414" font-size="14" fill="#232F3E">• Orchestration</text>
+
+    <line x1="400" y1="466" x2="265" y2="521" stroke="#545B64" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="400" y1="466" x2="535" y2="521" stroke="#545B64" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="150" y="526" width="230" height="55" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="2"/>
+    <text x="265" y="559" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Knowledge Base (RAG)</text>
+
+    <rect x="420" y="526" width="230" height="55" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="2"/>
+    <text x="535" y="559" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Action Group (Lambda)</text>
+
+    <line x1="265" y1="581" x2="265" y2="626" stroke="#545B64" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="535" y1="581" x2="535" y2="626" stroke="#545B64" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="150" y="631" width="230" height="70" rx="8" fill="#F2F3F3" stroke="#879596" stroke-width="2"/>
+    <text x="265" y="658" text-anchor="middle" font-size="13" font-weight="bold" fill="#232F3E">OpenSearch</text>
+    <text x="265" y="678" text-anchor="middle" font-size="13" fill="#232F3E">S3 Docs</text>
+
+    <rect x="420" y="631" width="230" height="95" rx="8" fill="#F2F3F3" stroke="#879596" stroke-width="2"/>
+    <text x="535" y="654" text-anchor="middle" font-size="13" font-weight="bold" fill="#232F3E">AWS Services</text>
+    <text x="535" y="674" text-anchor="middle" font-size="13" fill="#232F3E">CRM APIs</text>
+    <text x="535" y="694" text-anchor="middle" font-size="13" fill="#232F3E">DynamoDB</text>
+    <text x="535" y="714" text-anchor="middle" font-size="13" fill="#232F3E">SAP</text>
+
+    <!-- Left caption -->
+    <rect x="110" y="766" width="580" height="190" rx="10" fill="#FFFFFF" stroke="#D5DBDB" stroke-width="1.5"/>
+    <text x="135" y="796" font-size="15" font-weight="bold" fill="#232F3E">Best Fit</text>
+    <text x="135" y="824" font-size="13.5" fill="#232F3E">• Fully managed, AWS-native experience</text>
+    <text x="135" y="850" font-size="13.5" fill="#232F3E">• Built-in RAG (Knowledge Bases) + Lambda actions</text>
+    <text x="135" y="876" font-size="13.5" fill="#232F3E">• Fastest path for teams already using Bedrock</text>
+    <text x="135" y="902" font-size="13.5" fill="#232F3E">• Coupled to Bedrock's native agent framework</text>
+
+    <!-- ================= RIGHT: AGENTCORE ================= -->
+    <text x="1200" y="136" text-anchor="middle" font-size="19" font-weight="bold" fill="#232F3E">Amazon Bedrock AgentCore (Framework-Agnostic)</text>
+
+    <rect x="1130" y="156" width="140" height="46" rx="8" fill="#232F3E"/>
+    <text x="1200" y="185" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">User</text>
+
+    <line x1="1200" y1="202" x2="1200" y2="241" stroke="#545B64" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="900" y="246" width="600" height="80" rx="10" fill="#FFF3E0" stroke="#FF9900" stroke-width="2.5"/>
+    <text x="1200" y="272" text-anchor="middle" font-size="15" font-weight="bold" fill="#232F3E">Custom Agent Framework</text>
+    <text x="1200" y="296" text-anchor="middle" font-size="12.5" fill="#232F3E">LangGraph &#8226; CrewAI &#8226; Strands &#8226; OpenAI Agent SDK</text>
+
+    <line x1="1200" y1="326" x2="1200" y2="361" stroke="#545B64" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <!-- AgentCore outer box -->
+    <rect x="880" y="366" width="640" height="460" rx="12" fill="#F2F3F3" stroke="#232F3E" stroke-width="2"/>
+    <text x="905" y="394" font-size="17" font-weight="bold" fill="#232F3E">Amazon Bedrock AgentCore</text>
+
+    <!-- Row 1: Runtime / Memory -->
+    <rect x="910" y="408" width="280" height="95" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1050" y="430" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Runtime</text>
+    <text x="930" y="452" font-size="11.5" fill="#232F3E">• Agent Execution</text>
+    <text x="930" y="470" font-size="11.5" fill="#232F3E">• Session Isolation</text>
+    <text x="930" y="488" font-size="11.5" fill="#232F3E">• Auto Scaling</text>
+
+    <rect x="1210" y="408" width="280" height="95" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1350" y="430" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Memory</text>
+    <text x="1230" y="452" font-size="11.5" fill="#232F3E">• Short-Term</text>
+    <text x="1230" y="470" font-size="11.5" fill="#232F3E">• Long-Term</text>
+
+    <!-- Row 2: Gateway / Identity -->
+    <rect x="910" y="518" width="280" height="95" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1050" y="540" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Gateway</text>
+    <text x="930" y="562" font-size="11.5" fill="#232F3E">• APIs</text>
+    <text x="930" y="580" font-size="11.5" fill="#232F3E">• Lambda</text>
+    <text x="930" y="598" font-size="11.5" fill="#232F3E">• MCP Servers</text>
+
+    <rect x="1210" y="518" width="280" height="95" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1350" y="540" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Identity</text>
+    <text x="1230" y="562" font-size="11.5" fill="#232F3E">• Secure Credentials</text>
+
+    <!-- Row 3: Policy / Observability -->
+    <rect x="910" y="628" width="280" height="95" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1050" y="650" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Policy</text>
+    <text x="930" y="672" font-size="11.5" fill="#232F3E">• Authorization Rules</text>
+
+    <rect x="1210" y="628" width="280" height="95" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1350" y="650" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Observability</text>
+    <text x="1230" y="672" font-size="11.5" fill="#232F3E">• Traces &amp; Metrics</text>
+
+    <!-- Row 4: Browser + Code Interpreter (spans both columns) -->
+    <rect x="910" y="738" width="580" height="68" rx="8" fill="#E9F2FF" stroke="#0972D3" stroke-width="1.8"/>
+    <text x="1200" y="764" text-anchor="middle" font-size="14" font-weight="bold" fill="#232F3E">Browser + Code Interpreter</text>
+    <text x="1200" y="786" text-anchor="middle" font-size="11.5" fill="#545B64">Sandboxed tool execution environment</text>
+
+    <line x1="1200" y1="826" x2="1200" y2="861" stroke="#545B64" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="900" y="866" width="600" height="130" rx="10" fill="#F2F3F3" stroke="#879596" stroke-width="2"/>
+    <text x="1200" y="894" text-anchor="middle" font-size="16" font-weight="bold" fill="#232F3E">Enterprise Ecosystem</text>
+    <text x="1200" y="922" text-anchor="middle" font-size="13" fill="#232F3E">Salesforce &#8226; ServiceNow &#8226; SAP &#8226; Jira</text>
+    <text x="1200" y="944" text-anchor="middle" font-size="13" fill="#232F3E">AWS APIs &#8226; Internal Applications</text>
+
+    <!-- Right caption -->
+    <rect x="880" y="1026" width="640" height="170" rx="10" fill="#FFFFFF" stroke="#D5DBDB" stroke-width="1.5"/>
+    <text x="905" y="1054" font-size="15" font-weight="bold" fill="#232F3E">Best Fit</text>
+    <text x="905" y="1082" font-size="13" fill="#232F3E">• Bring your own framework (LangGraph, CrewAI, Strands, OpenAI SDK)</text>
+    <text x="905" y="1106" font-size="13" fill="#232F3E">• Deep enterprise integration via Gateway (MCP, APIs, Lambda)</text>
+    <text x="905" y="1130" font-size="13" fill="#232F3E">• Full control over memory, identity, policy &amp; observability</text>
+    <text x="905" y="1154" font-size="13" fill="#232F3E">• Best for multi-framework or framework-agnostic strategies</text>
+
+    <!-- Footer -->
+    <text x="800" y="1216" text-anchor="middle" font-size="11" fill="#879596">Simplified for comparison — based on AWS public architecture reference diagrams</text>
+
+  </g>
+</svg>

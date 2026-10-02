@@ -1,0 +1,30 @@
+┌─────────────────┐
+│     User        │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────────────────┐
+│      Amazon Bedrock         │
+│                             │
+│  ┌──────────────────────┐   │
+│  │    Bedrock Agent     │   │
+│  │                      │   │
+│  │ - Reasoning          │   │
+│  │ - Planning           │   │
+│  │ - Tool Selection     │   │
+│  │ - Orchestration      │   │
+│  └──────────┬───────────┘   │
+│             │               │
+│    ┌────────┴────────┐      │
+│    │                 │      │
+│    ▼                 ▼      │
+│ Knowledge Base   ActionGrp  │
+│   (RAG)          (Lambda)   │
+│                             │
+└─────────┬───────────┬───────┘
+          │           │
+          ▼           ▼
+      OpenSearch   AWS Services
+      S3 Docs      CRM APIs
+                  DynamoDB
+                  SAP

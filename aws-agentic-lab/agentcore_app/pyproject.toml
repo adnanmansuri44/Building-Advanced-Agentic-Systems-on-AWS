@@ -1,0 +1,11 @@
+[project]
+name = "agentic-lab-agent"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "strands-agents>=1.0.0",
+    "strands-agents-tools>=0.1.0",
+    "bedrock-agentcore>=0.1.0",
+    "yfinance>=0.2.40",
+    "boto3>=1.34",
+]

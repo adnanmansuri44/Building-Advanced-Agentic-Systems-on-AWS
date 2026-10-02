@@ -1,0 +1,60 @@
+┌───────────────────────┐
+│        User           │
+└──────────┬────────────┘
+           │
+           ▼
+ ┌───────────────────────────┐
+ │ Custom Agent Framework    │
+ │                           │
+ │ LangGraph                 │
+ │ CrewAI                    │
+ │ Strands                   │
+ │ OpenAI Agent SDK          │
+ └────────────┬──────────────┘
+              │
+              ▼
+
+╔════════════════════════════════════╗
+║     Amazon Bedrock AgentCore      ║
+╠════════════════════════════════════╣
+║                                    ║
+║ Runtime                            ║
+║ ├─ Agent Execution                 ║
+║ ├─ Session Isolation               ║
+║ └─ Auto Scaling                    ║
+║                                    ║
+║ Memory                             ║
+║ ├─ Short-Term                      ║
+║ └─ Long-Term                       ║
+║                                    ║
+║ Gateway                            ║
+║ ├─ APIs                            ║
+║ ├─ Lambda                          ║
+║ └─ MCP Servers                     ║
+║                                    ║
+║ Identity                           ║
+║ └─ Secure Credentials              ║
+║                                    ║
+║ Policy                             ║
+║ └─ Authorization Rules             ║
+║                                    ║
+║ Observability                      ║
+║ └─ Traces & Metrics                ║
+║                                    ║
+║ Browser + Code Interpreter         ║
+║                                    ║
+╚════════════════════════════════════╝
+              │
+              ▼
+
+ ┌─────────────────────────┐
+ │ Enterprise Ecosystem    │
+ ├─────────────────────────┤
+ │ Salesforce              │
+ │ ServiceNow              │
+ │ SAP                     │
+ │ Jira                    │
+ │ AWS APIs                │
+ │ Internal Applications   │
+ └─────────────────────────┘
+`

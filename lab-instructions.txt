@@ -1,0 +1,143 @@
+Building Advanced Agentic Systems on AWS — Lab Guide (Text Version)
+(Reconstructed summary based on your uploaded PDF)
+
+Overview
+This AWS lab teaches you how to build intelligent financial agents using:
+
+Amazon Bedrock foundation models
+
+Strands Agents SDK
+
+Amazon Bedrock AgentCore
+
+You progress from a simple budgeting agent to a multi-agent architecture and finally deploy a production-ready agentic system.
+
+Lab Objectives
+By the end, you will be able to:
+
+Build a single-purpose agent with custom tools
+
+Implement conversation memory and structured outputs
+
+Create multi-agent systems using “Agents as Tools”
+
+Deploy agents using AgentCore with observability and security
+
+Clean up AWS resources created during the lab
+
+Prerequisites
+Intermediate Python
+
+Basic AWS knowledge
+
+Familiarity with Jupyter notebooks
+
+Understanding of generative AI concepts
+
+Task 1 — Build a Personal Budget Assistant
+What you build
+A single Strands Agent that:
+
+Understands natural language financial questions
+
+Applies the 50/30/20 budgeting rule
+
+Generates visualizations (pie charts)
+
+Maintains conversation memory
+
+Produces structured financial reports
+
+Uses guardrails for responsible AI
+
+Workflow
+Open the provided IDE URL
+
+Launch VS Code in the browser
+
+Open Task‑1.ipynb
+
+Select Python 3.12
+
+Run notebook cells to build the agent
+
+Task 2 — Multi-Agent System for Financial Analysis
+Architecture
+You build three agents:
+
+1. Budget Agent
+Handles budgeting, spending analysis, and financial discipline.
+
+2. Financial Analysis Agent
+Uses tools like yfinance to analyze stocks, portfolios, and market trends.
+
+3. Orchestrator Agent
+Routes user queries to the correct specialized agent and synthesizes responses.
+
+Workflow
+Open Task‑2.ipynb
+
+Run notebook cells
+
+Test multi-agent routing with complex financial queries
+
+Task 3 — Deploy with Amazon Bedrock AgentCore
+What AgentCore adds
+Production hosting
+
+Identity & authentication (Cognito)
+
+Observability dashboards
+
+Auto-scaling
+
+Secure agent execution
+
+Architecture Components
+AgentCore Runtime
+
+AgentCore Identity
+
+Bedrock foundation models
+
+Guardrails
+
+Cognito authentication
+
+Multi-agent orchestration
+
+Workflow
+Open Task‑3.ipynb
+
+Deploy your agents to AgentCore
+
+Test production endpoints
+
+Task 4 — Clean Up AWS Resources
+You delete:
+
+AgentCore runtime
+
+ECR repository
+
+Cognito user pool
+
+Any other lab-created resources
+
+Workflow
+Open aws_cleanup.ipynb
+
+Run all cells in order
+
+Confirm cleanup
+
+Conclusion
+You successfully:
+
+Built a single-purpose agent
+
+Created a multi-agent system
+
+Deployed agents using AgentCore
+
+Cleaned up all resources
